@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mini Music</string>
+    <string name="music_fenlei_xingge">New</string>
+    <string name="msuic_fenlei_rege">KTV</string>
+    <string name="music_fenlei_net">Net</string>
+    <string name="music_fenlei_oumei">EU-US</string>
+    <string name="music_fenlei_gantai">HK</string>
+    <string name="music_fenlei_liuxing">Pop</string>
+    <string name="music_fenlei_Kge">Ballad</string>
+    <string name="music_fenlei_yinyueren">Musician</string>
+    <string name="music_fenlei_neidi">Mainland</string>
+</resources>

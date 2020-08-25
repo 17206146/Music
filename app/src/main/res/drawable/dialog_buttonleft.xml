@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--单击时的图片背景-->
+    <item android:drawable="@drawable/dialogbeautify4" android:state_pressed="true"/>
+    <!--选中时的图片背景-->
+    <item android:drawable="@drawable/dialogbeautify4" android:state_selected="true"/>
+    <!-- 默认时的背景图片-->
+    <item android:drawable="@drawable/dialogbeautify1"/>
+
+</selector>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <View
+            android:id="@+id/vv_xian"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#edebeb"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#edebeb">
+            <EditText
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:id="@+id/et_findlocal"
+                android:textSize="13sp"
+                android:hint="Search Online Music"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/iv_findNet"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="30dp"
+                android:background="@drawable/find"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <GridView
+                android:id="@+id/main_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:horizontalSpacing="0dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="0dp" >
+            </GridView>
+        </RelativeLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="Best wishes for you"
+            android:layout_height="match_parent"
+            android:background="#edebeb"/>
+    </LinearLayout>
+
+</LinearLayout>
