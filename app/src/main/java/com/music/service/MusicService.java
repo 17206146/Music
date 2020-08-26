@@ -196,11 +196,9 @@ public class MusicService extends Service {
 
     //接收来自Notification的广播并控制音乐播放
     public class MusicBroadCast extends BroadcastReceiver {
-        private final String MUSIC_NOTIFICATION_ACTION_PLAY = "musicnotificaion.To.PLAY";
-        private final String MUSIC_NOTIFICATION_ACTION_NEXT = "musicnotificaion.To.NEXT";
-        private final String MUSIC_NOTIFICATION_ACTION_PRE = "musicnotificaion.To.PRE";
         @Override
         public void onReceive(Context context, Intent intent) {
+            Log.e(TAG,intent.getAction());
             switch (intent.getAction()){
                 case MUSIC_NOTIFICATION_ACTION_PLAY :
                     Intent startIntent1 = new Intent(getApplicationContext(), MusicService.class);

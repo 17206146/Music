@@ -84,8 +84,6 @@ public class MusicNotification extends Notification {
         PendingIntent pnext = PendingIntent.getBroadcast(context, REQUEST_CODE, next, 0);
         remoteViews.setOnClickPendingIntent(R.id.iv_notigication__next, pnext);
 
-        PendingIntent pre = PendingIntent.getBroadcast(context, REQUEST_CODE,close , 0);
-        remoteViews.setOnClickPendingIntent(R.id.iv_notigication__pre, pre);
 
         // 3.注册关闭点击事件
 
@@ -123,8 +121,6 @@ public class MusicNotification extends Notification {
         PendingIntent npnext = PendingIntent.getBroadcast(context, REQUEST_CODE, nnext, 0);
         remoteViews.setOnClickPendingIntent(R.id.iv_notigication__next, npnext);
 
-        PendingIntent pre = PendingIntent.getBroadcast(context, REQUEST_CODE,close , 0);
-        remoteViews.setOnClickPendingIntent(R.id.iv_notigication__pre, pre);
         // 3.注册关闭点击事件
 
         PendingIntent npclose = PendingIntent.getBroadcast(context, REQUEST_CODE, nclose, 0);
