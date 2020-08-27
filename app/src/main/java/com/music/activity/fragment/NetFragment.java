@@ -40,7 +40,9 @@ public class NetFragment extends Fragment {
     @Bind(R.id.main_gridview)
     GridView mainGridview;
     private SparseArray<String> gridItems = new SparseArray<String>();
+
     private Map<Integer,String> maps = new HashMap<>();
+    private Map<Integer,String> maps2 = new HashMap<>();
     MusicGridAdapter musicGridAdapter;
     Banner banner;
     private List<Integer> images;
@@ -118,6 +120,7 @@ public class NetFragment extends Fragment {
                                 long id) {
             Intent intent = new Intent(getContext(), MusicListActivity.class);
             intent.putExtra("musictype", maps.get(position));
+            intent.putExtra("musictype2", maps2.get(position));
             startActivity(intent);
         }
     }
@@ -135,9 +138,19 @@ public class NetFragment extends Fragment {
         maps.put(3,getString(R.string.music_fenlei_liuxing));
         maps.put(4,"Antiquity");
         maps.put(5,"Folk");
-        maps.put(6,"getString(R.string.music_fenlei_oumei)");
+        maps.put(6,getString(R.string.music_fenlei_oumei));
         maps.put(7,"Sports");
         maps.put(8,"Classical");
+
+        maps2.put(0,"轻音乐");
+        maps2.put(1,"粤语");
+        maps2.put(2,"民谣");
+        maps2.put(3,"流行");
+        maps2.put(4,"古风");
+        maps2.put(5,"民族");
+        maps2.put(6,"欧美");
+        maps2.put(7,"运动");
+        maps2.put(8,"经典");
     }
 
     @Override

@@ -55,9 +55,10 @@ public class MusicListActivity extends BaseActivity {
         setContentView(R.layout.activity_music_list);
         ButterKnife.bind(this);
 
-        typeid = getIntent().getStringExtra("musictype");
+        typeid = getIntent().getStringExtra("musictype2");
+
         setToolBar(R.id.tb_main);
-        tvToolbar.setText(typeid);
+        tvToolbar.setText(getIntent().getStringExtra("musictype"));
         initWhiteHome();
 
         netState = NetStateUtil.getNetWorkState(getBaseContext());
